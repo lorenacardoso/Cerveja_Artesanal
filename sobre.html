@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/sobre.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<link rel="icon" href="img/icone.png" type="image/x-icon">
+		<title>CERVEJARIA NORTE</title>
+		<style>
+			.mySlides {display:none}
+			.w3-left, .w3-right, .w3-badge {cursor:pointer}
+			.w3-badge {height:13px;width:13px;padding:0}
+		</style>
+	</head>
+	<body>
+	<nav class="menu-container">
+					<ul class="menu clearfix">
+						<li><img src="img/icone.png" height="60" width="80"></li>
+						<li><a href="index.html">Inicio</a></li>
+						<li><a href="Perguntas.html">Perguntas</a></li>
+						<div id="divBusca">
+							<input type="text" id="txtBusca" placeholder="Buscar..."/>
+						</div>
+					</ul>
+		
+			<h1>CERVEJARIA NORTE</h1>
+		
+
+		<p>
+		  	Além de oferecer vendas de Cerveja Artesanal, a nossa empresa oferece cursos de como fazer, para que assim você saiba saborear a sua própria cereveja. Além disso, os cursos são com preços acessiveis a todos e são vários, vai de pricipiante a profissional. 
+		</p>
+
+		<p>
+		  	Ficou interessado? Quer saber como funciona? Entra em contato com a nossa empresa por via e-mail "cervejaria_norte@gmail.com", pelo WhatsApp "(42) 999925044", pelo nosso telefone fixo "3460-9878" ou pode vir até nós "Avenida Prefeito Vedolino Neves-200,Bairro Bom Retiro-Teixeira Soares, PR".
+		</p>
+
+		<h2>HISTÓRIA</h2>
+
+		<figure id ="empresa">
+			<img src="img/sobre4.png" alt="Nossa empresa: " >
+		</figure>
+		<p>
+		  	O amor por cerveja artesananl se tornou uma grande empresa!
+		  	A Cervejaria Norte começou em um projeto entre os amigos Luis Gustavo Gorte, Igor Diego Hilgemberg, Lorena Cardoso e Ana Luíza Bock, todos iriam para faculdade, porém, precisavam de dinheiro para conseguir se sustenar, já que um deles (Ana Luíza Bock) tinha experiências com cerveja artesanal, decidiram levar isso como um meio de sustento na grande cidade de Curitiba. Foi aí que todos perceberam que aquilo não era um trabalho, era um jeito de se divertir e de ter prazer em fazer algo, com isso, a empresa que era apenas um pequeno projeto se tornou maior do que todos podiam imaginar, fazendo assim crescerem até se tornarem o que somos hoje.
+		</p>
+		<div class="w3-content w3-display-container" style="max-width:800px">
+						  <img class="mySlides" src="img/sobre1.png" style="width:100%">
+						  <img class="mySlides" src="img/sobre2.png" style="width:100%">
+						  <img class="mySlides" src="img/sobre3.png" style="width:100%">
+						  <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+						    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+						    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+						    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+						    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+						    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+						  </div>
+						</div>
+
+						<script>
+							var slideIndex = 1;
+							showDivs(slideIndex);
+
+							function plusDivs(n) {
+							  showDivs(slideIndex += n);
+							}
+
+							function currentDiv(n) {
+							  showDivs(slideIndex = n);
+							}
+
+							function showDivs(n) {
+							  var i;
+							  var x = document.getElementsByClassName("mySlides");
+							  var dots = document.getElementsByClassName("demo");
+							  if (n > x.length) {slideIndex = 1}
+							  if (n < 1) {slideIndex = x.length}
+							  for (i = 0; i < x.length; i++) {
+							    x[i].style.display = "none";  
+							  }
+							  for (i = 0; i < dots.length; i++) {
+							    dots[i].className = dots[i].className.replace(" w3-white", "");
+							  }
+							  x[slideIndex-1].style.display = "block";  
+							  dots[slideIndex-1].className += " w3-white";
+							}
+						</script>
+			<p>
+				Agora nos temos uma empresa que trabalha com a mão de obra e várias que vendem o produto final. 
+				Estamos espalhados por várias cidades do Paraná:
+				-Teixeira Soares;
+				-Irati;
+				-Curitiba;
+				-Ponta Grossa;
+				-Telemaco Borba;
+				-Maringá;
+				-Imbituva;
+				-Paranagua.
+				Todas as lojas saõ de ótima qualidade e confortaveis, confira.
+			</p>
+		<div id="rodape">
+			<img src="img/logo.png" alt="Logo da empresa" width="40" height="40">
+			&copy; Copyright Empresa 
+		</div>
+	</body>
+</html>

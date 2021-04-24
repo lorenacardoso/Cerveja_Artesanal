@@ -1,0 +1,95 @@
+p{
+	color:white;
+	background-color:black;
+	font-family: monospace;
+}
+
+h1{
+	font-family: sans-serif;
+}
+
+h2{
+	font-family: sans-serif;
+}
+
+body{
+		background-color: black;
+		margin: 0 auto;
+		width: 940px;
+		color: white;
+		font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+
+}
+
+header{
+	position: relative;
+}
+
+.menu_opcoes{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+.menu_opcoes ul {
+	font-size: 15px;
+}
+
+.menu_opcoes ul li{
+	display: inline;
+	margin-left: 20px;
+}
+
+.menu_opcoes a{
+	color: black;
+}
+
+.container{
+	margin: 0 auto;
+	width: 940px;
+}
+
+.menu-departamentos{
+
+background-color: black;
+font-weight: bold;
+text-transform: uppercase;
+
+margin-right: 10px;
+width: 230px;
+
+
+float: left;
+}
+
+.busca input [type=search]{
+width: 170px;
+position: absolute;
+}
+
+.menu-departamentos h2{
+margin: 10px;
+}
+
+.menu-departamentos{
+clear: left;
+text-transform: uppercase;
+
+margin-top: 10px;
+margin-bottom: 10px;
+}
+
+.menu-departamentos li{
+background-color: white;
+margin-bottom: 1px;
+padding: 5px 10px;
+}
+
+.menu-departamentos a{
+color: black;
+text-decoration: none;
+}
+
+.destaque{
+margin-top: 10px;
+}

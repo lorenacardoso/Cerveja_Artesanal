@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="utf-8">
+			<link rel="stylesheet" type="text/css" href="css/estilos.css">
+			<link rel="stylesheet" type="text/css" href="css/sobre.css">
+			<meta name="viewport" content="width=device-width, initial-scale-1.0">
+			<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+			<link rel="icon" href="img/icone.png" type="image/x-icon">
+			<title>CERVEJARIA NORTE</title>
+			<style>
+				.mySlides {display:none}
+				.w3-left, .w3-right, .w3-badge {cursor:pointer}
+				.w3-badge {height:13px;width:13px;padding:0}
+			</style>
+		</head>
+		<body>
+			<header>
+				<nav class="menu-container">
+					<ul class="menu clearfix">
+						<li><img src="img/icone.png" height="60" width="80"></li>
+						<li><a href="sobre.html">Sobre</a></li>
+						<li><a href="Perguntas.html">Perguntas</a></li>
+						<div id="divBusca">
+							<input type="text" id="txtBusca" placeholder="Buscar..."/>
+						</div>
+					</ul>
+					<center>
+					<h1>CERVEJARIA NORTE</h1>
+					</center>
+						<div class="w3-content w3-display-container" style="max-width:800px">
+						  <img class="mySlides" src="img/1.png" style="width:100%">
+						  <img class="mySlides" src="img/2.png" style="width:100%">
+						  <img class="mySlides" src="img/3.png" style="width:100%">
+						  <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+						    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+						    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+						    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+						    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+						    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+						  </div>
+						</div>
+
+						<script>
+							var slideIndex = 1;
+							showDivs(slideIndex);
+
+							function plusDivs(n) {
+							  showDivs(slideIndex += n);
+							}
+
+							function currentDiv(n) {
+							  showDivs(slideIndex = n);
+							}
+
+							function showDivs(n) {
+							  var i;
+							  var x = document.getElementsByClassName("mySlides");
+							  var dots = document.getElementsByClassName("demo");
+							  if (n > x.length) {slideIndex = 1}
+							  if (n < 1) {slideIndex = x.length}
+							  for (i = 0; i < x.length; i++) {
+							    x[i].style.display = "none";  
+							  }
+							  for (i = 0; i < dots.length; i++) {
+							    dots[i].className = dots[i].className.replace(" w3-white", "");
+							  }
+							  x[slideIndex-1].style.display = "block";  
+							  dots[slideIndex-1].className += " w3-white";
+							}
+						</script>
+						<header class = container>
+
+						<h2>Seja bem-vindo a nossa página.</h2>
+						<ul>
+							<li>Confira nossas cervejas</li>
+							<li>Receba informações de novos tipos de cerveja</li>
+							<li>Deguste todos os tipos</li>
+						</ul>
+						<center>
+							<img src="img/tenor.gif">
+						</center>
+						<h3>
+							Aprenda um pouco sobre Cervejas Artesanais:
+						</h3>
+						  
+						<h4>
+							É uma bebida com teor alcoólico carbonatada, ou seja, são bebidas que são gaseificadas com gás carbônico, tais como os refrigerantes e alguns espumantes. São produzidas através de fermentação e as principais matérias-primas são: água, malte, lúpulo e fermento.
+
+							Agora que já temos noção do que é uma cerveja, vamos desmistificar um maravilhoso mundo onde esse precioso líquido se encontra
+
+							E afinal, qual a diferença entre tipos e estilos de cervejas?
+
+							Os tipos de cerveja querem dizer a família que pertencem e também um pouco sobre o seu processo de fabricação. Quanto o assunto é tipo as cervejas são classificadas em Ales e Lagers e o que as difere é a fermentação, sua coloração (clara ou escura) e o teor de álcool.
+
+							Já os estilos e subestilos querem dizer o padrão de combinar estes elementos. Como por exemplo uma batata, a frita seria um estilo, a assada outro e por aí vai mas no final das contas todas são batata, mas cada uma tem alguns elementos do preparo que são diferenciados entre si.
+							
+							<p>Família Lager: </p>
+						
+							A mais consumida no Brasil. Estas cervejas se diferem pela fermentação no seu processo de fabricação. São cervejas mais carbonatas e por isso sua aceitação junto ao público é maior. O fermento utilizado inicia sua fermentação em temperatura mais baixa, por volta de 6 a 12 graus, ficando acumulado no fundo dos tanques.
+
+							É conhecida como a família das cervejas de baixa fermentação, que são douradas e filtradas, mas possuem algumas versões mais escuras.
+
+							<p>Estilo Dark Lager:</p>
+							São cervejas escuras, com um baixo corpo, boa carbonatação e também apresentam teor de refrescância.
+
+							<p>Estilo Bock:</p>
+
+							São conhecidas por serem cervejas lagers com a coloração escura, saindo um pouco da tradição e com fortes características do malte, dando a elas notas de caramelo e de pão tostado.
+
+							<p>Estilo European Lager:</p>
+							Conhecido como um agrupamento de estilos europeus caracterizados por terem um maior teor alcoólico e também o mesmo tipo de fermentação.
+
+							<p>Família Ale:</p>
+							O que diferencia uma Ale e uma Lager é o seu processo de fermentação, mais alto no caso da Ale. A fermentação ocorre dentro de um ambiente com temperaturas altas, entre 15º e 24º graus, em alguns casos até mais que isso no curto tempo de três a cinco dias.
+
+							Foram as queridinhas até os meados do século XIX e só perderam o seu posto quando inventaram cervejas de baixa fermentação, as Lagers.
+
+							A fermentação baixa, conhecida também por fermentação quente, desperta os variados sabores dos conteúdos da cerveja, lúpulo, e frutas se tornam mais acentuados.
+
+							São cervejas mais encorpadas e o seu sabor varia entre o doce ao amargo e sua cor também acompanha o ritmo variando das mais claras até as mais escuras. Por estas razões é que existem diferentes sub estilos dentro da Ale, tamanho é o seu poder de variação.
+
+							<p>Estilo Altibier:</p>
+							Cerveja Ale produzida na Alemanha e que é considerada uma cerveja velha, pois seu tempo para maturar é mais demorado.
+
+							A Altibier se caracteriza por ter a coloração cobre e que realça a cerveja, é bem balanceada por sua complexidade, com pouco gás e combinação perfeita de lúpulo e malte — que confere o aroma tostado, de pães a cerveja.
+
+							<p>Estilo Trigo:</p> 
+							Cervejas de trigo.
+
+							São totalmente refrescantes e possuem baixo amargor com alta carbonatação. Podem apresentar aromas de banana, chocolate, malte torrado ou de especiarias.
+
+							<p>Estilo Porter:</p>
+							Muito comum que se confunda com a Stout, ela é mais suave e seu teor alcoólico é um pouco mais baixo se comparado com a Stout. Esse tipo de cerveja tem um tom mais escuro e apresentam sabor e aromas de café, chocolate e caramelo.
+
+							<p>Stout</p>
+							Antigamente esse estilo de cerveja era denominado um sub-estilo da Porter, eram denominas Stout Porter, sendo assim muito comum a confusão entre esses dois estilos.
+
+							As Stouts são escuras, quase negras com sabor adocicado que lembra chocolate, café ou malte torrado. Tem alto teor alcoólico e pouca carbonatação.
+
+							Sempre que falamos da Stout uma cerveja vem na cabeça: a Guiness é a principal cerveja desse estilo e é vendida no mundo inteiro.
+
+							</h4>
+
+							<h5>
+								Aqui vai um vídeo como guia para que você possa saber o que precisa ter para começar a fazer a sua cerveja:
+							</h5>
+							
+							<center>
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/8kO8BDOxdpU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							</center>
+							
+
+							<footer>
+								<div class="container">
+									
+									<ul class="social">
+										<li><a href="https://www.facebook.com/lorena.cardoso.5074">Facebook</a></li>
+										<li><a href="https://twitter.com/lohrena12">Twitter</a></li>
+										<li><a href="https://www.instagram.com/lorena.apc/">Instagram</a></li>
+										<img src="img/logo.png" alt="Logo da empresa" width="40" height="40">
+										&copy; Copyright Empresa 
+									</ul>
+								</div>
+							</footer>
+						</header>
+				</header>
+		</body>
+	</html>
